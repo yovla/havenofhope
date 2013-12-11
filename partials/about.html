@@ -1,0 +1,72 @@
+<div class="objectives section">
+  <div class="container">
+
+      <div class="row-fluid">
+        <div class="span3">
+          <div  class="well">
+            <h5>{{lang.dict.bulletinlabel}}</h5>
+            <ul>
+              <li><a href="{{lang.dict.march2013.url}}">{{lang.dict.march2013.label}}</a></li>
+              <li><a href="{{lang.dict.july2013.url}}">{{lang.dict.july2013.label}}</a></li>
+            </ul>
+          </div>
+
+          <div class="well green">
+            <h2 id="haven">Donate</h2>
+            <p>Your donation keeps our charity alive. Donate now to help teen mothers gain the tools to become financially secure.</p> 
+          
+           <button ng-click="href(lang.dict.lang,'/donate')" 
+                   class="btn btn-large btn-block btn-success" 
+                   type="button">Donate</button>
+          </div>
+        
+          <div class="well red">
+            <h2 id="haven">Volunteer</h2>
+            <p>We are always looking for volunteers to help teach classes and grow our charity. If you want to make a real difference in young womens lives, volunteer today! </p> 
+
+            <button ng-click="href(lang.dict.lang,'/contact')" 
+                     class="btn btn-large btn-block btn-warning" 
+                     type="button">Volunteer</button>
+            
+            <!-- <p><a class="btn" href="about.html">Volunteer</a></p> -->
+          </div>
+
+        </div>
+        <div class="span9 objectives-details">
+         <img src="img/Banner-hoh.png" class="img-polaroid" style="margin-bottom:20px;"> 
+          <div  class="hero-unit">
+            <h2 class="header">{{lang.dict.objectivelabel}}</h2>
+            <p>{{lang.dict.objectivesummary}}:</p>
+
+            <dl style="padding-left:20px;">
+              <dt>1. Self Confidence</dt>
+              <dd>{{lang.dict.objective1}}</dd>
+              <dt>2. Financial Security</dt>
+              <dd>{{lang.dict.objective2}}</dd>
+              <dt>3. Vocational Training</dt>
+              <dd>{{lang.dict.objective3}}</dd>
+              <dt>4. Entrepreneurship</dt>
+              <dd>{{lang.dict.objective4}}</dd>
+              <dt>5. Hope</dt>
+              <dd>{{lang.dict.objective5}}</dd>
+            </dl>
+            
+            <div class="well blue">
+              <h2 id="haven">Join Us</h2>
+              <p>If you are a teen mother and you are ready to build your future, come join us! 
+                We will help you gain the skills, tools, and confidence you need to succeed.</p> 
+              
+              <button ng-click="href(lang.dict.lang,'/contact')" 
+                       class="btn btn-large btn-primary" 
+                       type="button">Join Us</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+  </div>
+</div>
+
