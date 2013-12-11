@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="hoh">
+  <head>
+    <meta charset="utf-8">
+    <title>Haven Of Hope</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+     <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+  -->
+  <script src="/lib/jquery/jquery.min.js"></script>
+  <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+
+  <link href='http://fonts.googleapis.com/css?family=Signika+Negative|Poiret+One|Andika|Tinos|Bad+Script|Marck+Script|Varela+Round|Lusitana|Rancho|Roboto+Slab|Buda:300' rel='stylesheet' type='text/css'>
+
+    <!-- Le styles -->
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="bootstrap/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="img/logo2.jpg">
+
+    <style type="text/css">
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -110px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 110px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+    </style>
+  </head>
+
+  <body ng-controller="Main">
+   <div id="wrap">
+
+    <div class="topbar">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span2">
+            <img class="logo" src="/img/logo-badge-og-2.png">
+          </div>
+          <!-- <div class="span5"><h3>{{lang.dict.name}}</h3></div> -->
+          <div class="span10">
+              <ul class="nav nav-pills">
+                <li ng-class="getClass('home')">
+                  <a href="#/{{lang.dict.lang}}/home">Home</a>
+                </li>
+                <li ng-class="getClass('about')">
+                  <a href="#/{{lang.dict.lang}}/about">About</a>
+                </li>
+                <li ng-class="getClass('contact')">
+                  <a href="#/{{lang.dict.lang}}/contact">Contact</a>
+                </li>
+                <li ng-class="getClass('donate')">
+                  <a href="#/{{lang.dict.lang}}/donate">Donate</a>
+                </li>
+                <li class="pull-right"><a href="#/{{lang.dict.next}}/{{path()}}">{{lang.dict.nextLabel}}</a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span2">
+          </div>
+          <div class="span10">
+          <p><b>Counselling And Rehabilitation Of Teenage Mothers</b></p>
+          </div>
+         <!--  <div class="span3"> -->
+         <!--  </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div ng-view></div>
+    <div id="push"></div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row-fluid">
+          <!-- <div class="span1"></div> -->
+          <div class="span2">
+            <img src="img/logo-mom-2-white.png">
+          </div>
+          <div class="span2" >
+            <span ng-include="'partials/address.html'"></span>
+          </div>
+          <div class="span3">
+            <span ng-include="'partials/address-contact.html'"></span>
+          </div>
+          <div class="span3">
+            <strong>{{lang.dict.bulletinlabel}}</strong>
+            <ul class="nav">
+              <li><a href="{{lang.dict.march2013.url}}">{{lang.dict.march2013.label}}</a></li>
+              <li><a href="{{lang.dict.july2013.url}}">{{lang.dict.july2013.label}}</a></li>
+            </ul>
+          </div> 
+          <div class="span1">
+            <strong>Links</strong>
+            <ul class="nav">
+              <li class=""><a href="#/{{lang.dict.lang}}/home">Home</a></li>
+              <li><a href="#/{{lang.dict.lang}}/about">About</a></li>
+              <li><a href="#/{{lang.dict.lang}}/contact">Contact</a></li>
+              <li><a href="#/{{lang.dict.lang}}/donate">Donate</a></li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+    </footer>
+ 
+
+  </body>
+</html>
