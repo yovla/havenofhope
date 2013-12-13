@@ -148,10 +148,10 @@ dd{
 	line-height: 1.6em;
 	color:#624675;
 	text-shadow: 1px 1px 1px #fff;
-	/*font-family: serif;*/
+	font-family: serif;
 	/*font-style: italic;*/
-	text-align: justify;
-	font-family: 'Lusitana', serif;
+	/*text-align: justify;*/
+	/*font-family: 'Lusitana', serif;*/
 }
 
 .hero-unit.donate{
@@ -263,4 +263,16 @@ address a:hover{
 		background-color: #eee;
 		text-decoration: none;
 		line-height: 20px;
+}
+
+.publication{
+	font-style: normal;
+}
+
+.publication h2,
+.publication h3,
+.publication h4,
+.publication p{
+	margin: 0px;
+	
 }

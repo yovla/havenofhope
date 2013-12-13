@@ -19,7 +19,7 @@
   <script src="./js/filters.js"></script>
   <script src="./js/directives.js"></script>
 
-  <link href='http://fonts.googleapis.com/css?family=Signika+Negative|Poiret+One|Andika|Tinos|Bad+Script|Marck+Script|Varela+Round|Lusitana|Rancho|Roboto+Slab|Buda:300' rel='stylesheet' type='text/css'>
+ <!--  <link href='http://fonts.googleapis.com/css?family=Signika+Negative|Poiret+One|Andika|Tinos|Bad+Script|Marck+Script|Varela+Round|Lusitana|Rancho|Roboto+Slab|Buda:300' rel='stylesheet' type='text/css'> -->
 
     <!-- Le styles -->
     <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -99,6 +99,9 @@
                 <li ng-class="getClass('donate')">
                   <a href="#/{{lang.dict.lang}}/donate">Donate</a>
                 </li>
+                <li ng-class="getClass('publications')">
+                  <a href="#/{{lang.dict.lang}}/publications">Publications</a>
+                </li>
                 <li class="pull-right"><a href="#/{{lang.dict.next}}/{{path()}}">{{lang.dict.nextLabel}}</a></li>
               </ul>
           </div>
@@ -139,8 +142,9 @@
           <div class="span3">
             <strong>{{lang.dict.bulletinlabel}}</strong>
             <ul class="nav">
-              <li><a href="{{lang.dict.march2013.url}}">{{lang.dict.march2013.label}}</a></li>
+              <li><a href="{{lang.dict.nov2013.url}}">{{lang.dict.nov2013.label}}</a></li>
               <li><a href="{{lang.dict.july2013.url}}">{{lang.dict.july2013.label}}</a></li>
+              <li><a href="{{lang.dict.march2013.url}}">{{lang.dict.march2013.label}}</a></li>
             </ul>
           </div> 
           <div class="span1">

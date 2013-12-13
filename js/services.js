@@ -21,9 +21,11 @@ angular.module('hoh.services', []).service('langService', function(){
         "objective5":"To counsel teenage pregnant girls who are in a state of dispair due to unexpected or unwanted pregnancy to enable them come to terms with their condition",
         "bulletinlabel":"Monthly Newsletters",
         "march2013":{"label":"Bulletin March 2013",
-                      "url":"/PDF%20English/BULLETIN%2003-2013.pdf"},
+                     "url":"./PDF%20English/BULLETIN%2003-2013.pdf"},
         "july2013":{"label":"Bulletin July 2013",
-                      "url":"/PDF%20English/BULLETIN%2007-2013.pdf"}
+                    "url":"./PDF%20English/BULLETIN%2007-2013.pdf"},
+        "nov2013":{"label":"Presentation To Charismagex Nov 2013",
+                   "url":"./PDF English/REPORT 12-2013 EN.pdf"}
 
       },
 
@@ -44,9 +46,11 @@ angular.module('hoh.services', []).service('langService', function(){
         "objective5":"Conseiller les adolescentes enceintes qui sont dans un état de désespoir en raison de la grossesse inattendue et non-désirée pour leur permettre à se réconcilier avec leur état",
         "bulletinlabel":"Bulletins d'Information",
         "march2013":{"label":"Bulletin Mars 2013",
-                      "url":"PDF%20French/BULLETIN%2003-2013.pdf"},
+                     "url":"./PDF%20French/BULLETIN%2003-2013.pdf"},
         "july2013":{"label":"Bulletin Julliet 2013",
-                      "url":"PDF%20French/BULLETIN%2007-2013.pdf"}
+                    "url":"./PDF%20French/BULLETIN%2007-2013.pdf"},
+        "nov2013":{"label":"Présentation À Charismagex Nov 2013",
+                    "url":"./PDF French/REPORT 12-2013 FR.pdf"}
       }
   };
 
@@ -57,6 +61,7 @@ angular.module('hoh.services', []).service('langService', function(){
   var version = "app.css";
 
   return {
+      getLangDict: function(){return langDict},
       getDict: function(){return lang},
       setDict: function(l){lang.dict = langDict[l]},
       getPage: function(){return page},

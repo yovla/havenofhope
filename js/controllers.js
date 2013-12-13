@@ -17,6 +17,7 @@ yoan.controller('Main', ['$scope', '$location', '$routeParams', 'langService',
       $scope.path = langService.getPage;
 
       $scope.lang = langService.getDict();
+      $scope.langDict = langService.getLangDict();
 
       $scope.href = function(lang, page){
         var url = '/' + lang + page;

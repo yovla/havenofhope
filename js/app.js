@@ -19,5 +19,8 @@ angular.module('hoh', ['hoh.filters',
     $routeProvider.when('/:lang/donate', {templateUrl: 'partials/donate.html',
                                   controller: 'Main'});
 
+    $routeProvider.when('/:lang/publications', {templateUrl: 'partials/publications.html',
+                                  controller: 'Main'});
+
     $routeProvider.otherwise({redirectTo: '/en/home'});
   }]);
