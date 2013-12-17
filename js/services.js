@@ -54,8 +54,9 @@ angular.module('hoh.services', []).service('langService', function(){
                     "url":"./PDF%20French/BULLETIN%2007-2013.pdf"},
         "nov2013":{"label":"Présentation À Charismagex Nov 2013",
                     "url":"./PDF French/REPORT 12-2013 FR.pdf"},
-        "dec2013":{"label":"Bulletin Decembre 2013",
-                   "url":"./PDF English/Bulletin December 2013 FR.pdf"}
+        "dec2013":{"label":"Bulletin December 2013",
+                    "url":"./PDF French/Bulletin December 2013 FR.pdf"}
+      
       }
   };
 
