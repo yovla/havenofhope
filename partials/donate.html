@@ -11,7 +11,7 @@
 
           <div class="well red">
             <h2 id="haven">Volunteer</h2>
-            <p>We are always looking for volunteers to help teach classes and grow our charity. If you want to make a real difference in young womens lives, volunteer today! </p> 
+            <p>{{lang.dict.volunteermessage}}</p> 
 
             <button ng-click="href(lang.dict.lang,'/contact')" 
                      class="btn btn-large btn-block btn-warning" 
@@ -22,24 +22,26 @@
         </div>
 
         <div class="span9 hero-unit donate">
-          <h1>Donate</h1>
-          <p>Your donation directly helps teen mothers in need. We thank you for making a difference in young womens lives. If you have any questions, please email us at: <a href="mailto:admin@havenofhopetm.org">admin@havenofhopetm.org</a></p>
+          <h1>{{lang.dict.donate}}</h1>
+          <p>{{lang.dict.donatemessagelong}} <a href="mailto:admin@havenofhopetm.org">admin@havenofhopetm.org</a></p>
           <br>
-          <h4>Money Transfer</h4>
+          <h4>{{lang.dict.moneytransfer}}</h4>
           <div class="well">
             <dl class="dl-horizontal">
-              <dt>Code Banque</dt>
+              <dt>{{lang.dict.bank}}</dt>
+              <dd>Societe General De Banques Au Cameroun</dd>
+              <dt>{{lang.dict.bankcode}}</dt>
               <dd>10003</dd>
-              <dt>Code Guichet</dt>
+              <dt>{{lang.dict.bankbranchcode}}</dt>
               <dd>01600</dd>
-              <dt>No. Compte</dt>
+              <dt>{{lang.dict.bankaccountnumber}}</dt>
               <dd>16160470446</dd>
-              <dt>Cle</dt>
-              <dd>25</dd>
-              <dt>Code Swift</dt>
+              <dt>{{lang.dict.bankswiftcode}}</dt>
               <dd>SGCMCMCX</dd>
               <dt>IBAN</dt>
               <dd>CM21 10003 01600 16160470446 25</dd>
+              <!-- <dt>{{lang.dict.bankkey}}</dt>
+              <dd>25</dd> -->
             </dl>
           </div>
 
