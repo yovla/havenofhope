@@ -14,21 +14,21 @@
           </div>
 
           <div class="well green">
-            <h2 id="haven">Donate</h2>
-            <p>Your donation keeps our charity alive. Donate now to help teen mothers gain the tools to become financially secure.</p> 
+            <h2 id="haven">{{lang.dict.donate}}</h2>
+            <p>{{lang.dict.donatemessage}}</p> 
           
            <button ng-click="href(lang.dict.lang,'/donate')" 
                    class="btn btn-large btn-block btn-success" 
-                   type="button">Donate</button>
+                   type="button">{{lang.dict.donate}}</button>
           </div>
         
           <div class="well red">
-            <h2 id="haven">Volunteer</h2>
-            <p>We are always looking for volunteers to help teach classes and grow our charity. If you want to make a real difference in young womens lives, volunteer today! </p> 
+            <h2 id="haven">{{lang.dict.volunteer}}</h2>
+            <p>{{lang.dict.volunteermessage}}</p> 
 
             <button ng-click="href(lang.dict.lang,'/contact')" 
                      class="btn btn-large btn-block btn-warning" 
-                     type="button">Volunteer</button>
+                     type="button">{{lang.dict.volunteer}}</button>
             
             <!-- <p><a class="btn" href="about.html">Volunteer</a></p> -->
           </div>
@@ -54,13 +54,12 @@
             </dl>
             
             <div class="well blue">
-              <h2 id="haven">Join Us</h2>
-              <p>If you are a teen mother and you are ready to build your future, come join us! 
-                We will help you gain the skills, tools, and confidence you need to succeed.</p> 
+              <h2 id="haven">{{lang.dict.joinus}}</h2>
+              <p>{{lang.dict.joinusmessage}}</p> 
               
               <button ng-click="href(lang.dict.lang,'/contact')" 
                        class="btn btn-large btn-primary" 
-                       type="button">Join Us</button>
+                       type="button">{{lang.dict.joinus}}</button>
             </div>
 
           </div>

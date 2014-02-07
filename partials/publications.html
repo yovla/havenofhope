@@ -9,12 +9,12 @@
             <span ng-include="'partials/address-contact.html'"></span>
           </div>
           <div class="well green">
-            <h2 id="haven">Donate</h2>
-            <p>Your donation keeps our charity alive. Donate now to help teen mothers gain the tools to become financially secure.</p> 
+            <h2 id="haven">{{lang.dict.donate}}</h2>
+            <p>{{lang.dict.donatemessage}}</p> 
           
            <button ng-click="href(lang.dict.lang,'/donate')" 
                    class="btn btn-large btn-block btn-success" 
-                   type="button">Donate</button>
+                   type="button">{{lang.dict.donate}}</button>
           </div>
         </div>
 
